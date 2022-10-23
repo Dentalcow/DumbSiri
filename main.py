@@ -92,7 +92,7 @@ def start_command_prompting():
         listen_for_keyword()
 
     elif 'insult' in statement or 'hit me' in statement:
-        option_1 randint(1,2)
+        option_1 random.randint(1,2)
         if option_1 == 1:
             words_1 = "You are a " + hit_me() + "."
         else:
@@ -103,7 +103,7 @@ def start_command_prompting():
         listen_for_keyword()
 
     elif 'fart' in statement or 'poop' in statement:
-        option_2 randint(1,2)
+        option_2 random.randint(1,2)
         if option_2 == 1:
             speak("ahhh help me")
             playsound('fart.mp3')
