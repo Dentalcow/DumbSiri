@@ -5,7 +5,9 @@ import wikipedia
 import webbrowser
 import time
 import requests
+import random
 from insulter import hit_me
+from playsound import playsound
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -90,7 +92,26 @@ def start_command_prompting():
         listen_for_keyword()
 
     elif 'insult' in statement or 'hit me' in statement:
-        disable_anger = False
+        option_1 randint(1,2)
+        if option_1 == 1:
+            words_1 = "You are a " + hit_me() + "."
+        else:
+            words_1 = "You suck, " + hit_me() + "!"
+        speak(words_1)
+        print(words_1)
+        time.sleep(5)
+        listen_for_keyword()
+
+    elif 'fart' in statement or 'poop' in statement:
+        option_2 randint(1,2)
+        if option_2 == 1:
+            speak("ahhh help me")
+            playsound('fart.mp3')
+            speak("no so stinky")
+        else:
+            speak("Oh OH OHH. is it meant to be liquid?")
+            playsound('poop.mp3')
+            speak("I i had buttocks they would be clentching really hard right now. AHHHHHHHHHHHH it hurts so much. I hate pooping. Poo is a " + hit_me() + "!")
         time.sleep(5)
         listen_for_keyword()
 
