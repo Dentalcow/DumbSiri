@@ -91,27 +91,19 @@ def start_command_prompting():
         time.sleep(8)
         listen_for_keyword()
 
-    elif 'insult' in statement or 'hit me' in statement:
-        option_1 randint(1,2)
-        if option_1 == 1:
-            words_1 = "You are a " + hit_me() + "."
-        else:
-            words_1 = "You suck, " + hit_me() + "!"
-        speak(words_1)
+    elif 'insult' in statement:
+        words_1 = "You are a " + hit_me() + "!"
         print(words_1)
         time.sleep(5)
         listen_for_keyword()
 
-    elif 'fart' in statement or 'poop' in statement:
-        option_2 randint(1,2)
-        if option_2 == 1:
-            speak("ahhh help me")
-            playsound('fart.mp3')
-            speak("no so stinky")
-        else:
-            speak("Oh OH OHH. is it meant to be liquid?")
-            playsound('poop.mp3')
-            speak("I i had buttocks they would be clentching really hard right now. AHHHHHHHHHHHH it hurts so much. I hate pooping. Poo is a " + hit_me() + "!")
+    elif 'poop' in statement:
+        speak("ahhh help me")
+        playsound('fart.mp3')
+        speak("no so stinky")
+        speak("Oh OH OHH. is it meant to be liquid?")
+        playsound('poop.mp3')
+        speak("If i had buttocks they would be clentching really hard right now. AHHHHHHHHHHHH it hurts so much. I hate pooping. Poo is a " + hit_me() + "!")
         time.sleep(5)
         listen_for_keyword()
 
