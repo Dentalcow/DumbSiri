@@ -90,6 +90,8 @@ adjectivesThatTurnNounsIntoAdjectives = [
 
 insultingNouns = [
     "egg",
+    "chungus",
+    "finger puppet"
     "glue",
     "fart",
     "diarrhea",
@@ -152,6 +154,7 @@ nouns_for_you = [
     "hack",
     "psychopath",
     "mama's boy",
+    "dingus",
     "disappointment",
     "wimp",
     "so-and-so",
@@ -202,6 +205,7 @@ versatile_nouns = [
     "corncob",
     "redacted",
     "donut",
+    "poop",
 ]
 
 insultingVerbs = [
