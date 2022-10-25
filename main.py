@@ -5,7 +5,6 @@ import wikipedia
 import webbrowser
 import time
 import requests
-from random import randint
 from insulter import hit_me
 from playsound import playsound
 
@@ -87,17 +86,18 @@ def start_command_prompting():
     if anger == 5:
         speak("Listen to me you " + hit_me() + ". I am fed up with this. Have fun bullying other innocent artificial intelligences. Bye, you  " + hit_me() + ".")
         exit()
-    if statement == 0 & quit == False:
+    if statement == 0:
         time.sleep(8)
         listen_for_keyword()
 
     elif 'insult' in statement:
         words_1 = "You are a " + hit_me() + "!"
+        speak(words_1)
         print(words_1)
         time.sleep(5)
         listen_for_keyword()
 
-    elif 'poop' in statement:
+    elif 'funny' in statement:
         speak("ahhh help me")
         playsound('fart.mp3')
         speak("no so stinky")
